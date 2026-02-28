@@ -3,7 +3,7 @@
 ## Overview
 A minimal, intuitive status indicator component designed to display task progress states through visual cues and interactive hover effects. This component transforms complex status information into digestible visual elements.
 
-![Status Indicator Component](screenshot-placeholder.png)
+![Status Indicator Component](screenshot-1.png)
 
 ## Design Challenge
 
@@ -44,4 +44,5 @@ The component employs a progressive disclosure pattern:
 .full-icon-1:hover span {
     display: block;
     transition: all 0.3s ease;
+
 }
