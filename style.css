@@ -1,0 +1,92 @@
+:root {
+    --color-1: gray;
+    --color-light-1: rgba(190, 189, 189, 0.397);
+    --color-2: rgb(255, 145, 0);
+    --color-light-2: rgba(250, 206, 148, 0.411);
+    --color-3: rgb(0, 68, 255);
+    --color-light-3: rgba(163, 186, 250, 0.445);
+    --color-4: green;
+    --color-light-4: rgba(195, 250, 163, 0.521);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    gap: 20px;
+}
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-1, 
+.icon-2,
+.icon-3,
+.icon-4,
+.full-icon-1,
+.full-icon-2,
+.full-icon-3,
+.full-icon-4 {
+    padding: 5px;
+    border: none;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.icon-1, .full-icon-1 {
+    color: var(--color-1);
+    background: var(--color-light-1);
+}
+.icon-2, .full-icon-2 {
+    color: var(--color-2);
+    background: var(--color-light-2);
+}
+.full-icon-1 span,
+.full-icon-2 span,
+.full-icon-3 span,
+.full-icon-4 span {
+    display: none;
+}
+.full-icon-1 i,
+.full-icon-2 i,
+.full-icon-3 i,
+.full-icon-4 i {
+    display: block;
+}
+.full-icon-1:hover span,
+.full-icon-2:hover span,
+.full-icon-3:hover span,
+.full-icon-4:hover span {
+    display: block;
+    transition: all 0.3s ease;
+}
+.icon-3, .full-icon-3 {
+    color: var(--color-3);
+    background: var(--color-light-3);
+}
+.icon-4, .full-icon-4 {
+    color: var(--color-4);
+    background: var(--color-light-4);
+}
